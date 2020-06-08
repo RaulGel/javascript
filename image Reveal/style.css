@@ -1,0 +1,31 @@
+body
+{
+    margin:0;
+    padding:0;
+    min-height: 1550px;
+}
+section
+{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bg /*이미지 설정*/
+{
+    position: fixed;
+    background: url(bg.jpg);
+    background-size: cover; /*사진 크기로 size 할당*/
+    background-attachment: fixed; 
+    /*
+      - scroll : 해당 영역의 이미지 고정(예제의 DIV에 적용한 경우 스크롤해도 배경고정)
+      - fixed : 전체 영역에서 이미지 고정(화면을 스크롤해도 배경 고정)
+      - local : 이미지 고정없이 같이 스크롤
+    */
+    width: 100%; /*가로*/
+    height: 0; /*세로*/
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
